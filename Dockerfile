@@ -8,7 +8,7 @@ RUN apk --no-cache update && \
     apk --no-cache add python py-pip py-setuptools ca-certificates groff less openssh sshpass && \
     pip --no-cache-dir install awscli==${AWS_CLI_VERSION} && \   
     rm -rf /var/cache/apk/*
-ADD  $HOME/.ssh/id_rsa
+ADD /home/m2c2/.ssh> </home/root/.ssh>
     
     
    

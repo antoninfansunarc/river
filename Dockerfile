@@ -7,7 +7,7 @@ ENV HOME /home/m2c2
 RUN apk --no-cache update && \
     apk --no-cache add python py-pip py-setuptools ca-certificates groff less openssh sshpass && \
     pip --no-cache-dir install awscli==${AWS_CLI_VERSION} && \   
-    mkdir -p /home/m2c2/.ssh && touch /home/m2c2/.ssh/id_pub
+    mkdir -p /home/m2c2/.ssh && \
     rm -rf /var/cache/apk/*
     
     
